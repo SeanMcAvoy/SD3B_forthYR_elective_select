@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<h1>Register for Electives</h1>
+
+<form action="/register" method="post">
+    <input name="name" autocomplete="off" autofocus placeholder="name" type="text">
+    <select name="elective">
+        <option disabled selected value="">Elective Choice</option>
+        {% for elective in electives %}
+            <option value="{{ elective }}">{{ elective }}</option>
+        {% endfor %}
+    </select>
+    <input type="submit">
+</form>
+
+{% endblock %}
