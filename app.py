@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect
 import mysql.connector
 import os
 from flask_mail import Mail, Message
-
+#TESTTTTT
 app = Flask(__name__)
 
 # app.config["MAIL_DEFAULT_SENDER"] = os.getenv("MAIL_DEFAULT_SENDER")
