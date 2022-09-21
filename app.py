@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, redirect
 import mysql.connector
 import os
 from flask_mail import Mail, Message
+#TESTTTTT
 #test 3
 #hello
 app = Flask(__name__)
